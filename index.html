@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+
+		<title>Mastermind</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	</head>
+	<body>
+		
+		<header> <!--Header -->
+
+			<!-- Top Navigation -->
+			<nav> 
+				<ul class="clearfix">
+					<li><a class="what" href="#" id="cheat">Cheat</a></li>
+             <li id="secret" class="hide"></li>
+					<li><a class="new" href="#" id="newGame">+ New Game</a></li>
+				</ul>
+			</nav>
+				
+
+			<!-- logo text -->
+			<h1>Mastermind</h1>
+
+		</header>
+
+		<section class="game"> <!-- Guessing Section -->
+			
+			<h2 id="feedback">Select 5 pegs!</h2>
+        <div id="peg-selector">
+          
+          <ul class="circle">
+            <li class="red"></li>
+            <li class="orange"></li>
+            <li class="yellow"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="purple"></li>
+            <li class="white"></li>
+            <li class="black"></li>
+          </ul>
+        </div>
+<hr class="breaker">
+			<form>
+        <div>
+          <ul id="selection" class="circle">
+            
+          </ul>
+        </div>
+      			<input type="submit" id="guessButton" class="button" name="submit" value="Guess"/>
+        
+			</form>
+			
+      		<p id="guess">Guess #<span id="count">0</span>!</p>
+           <p id="gameLost" class="hide">You LOST!</p>
+           <p id="gameWon" class="hide">You WON!</p>
+			
+			<ul id="guessList" class="guessBox clearfix">
+        
+
+			</ul>
+
+		</section>
+	</body>
+</html>
